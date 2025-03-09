@@ -1,0 +1,48 @@
+.skills-page {
+    position: relative;
+    top: 10rem;
+    padding: 20px;
+    text-align: center;
+    /* Fundo escuro para parecer um terminal */
+    color: #00ff00; /* Texto verde, estilo terminal */
+    min-height: 100vh;
+    font-family: 'Courier New', monospace;
+}
+.skill{
+    position: absolute;
+    left: 30.5rem ;
+    top: 5rem;
+    font-size: 2.5rem;
+}
+.terminal {
+    max-width: 900px;
+    min-height: 60vh;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.terminal-line {
+    margin-bottom: 10px;
+}
+
+.prompt {
+    color: #00ff00;
+    margin-right: 10px;
+}
+
+.cursor {
+    animation: blink .5s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}

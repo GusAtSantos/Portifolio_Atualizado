@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Advent Pro', sans-serif;
+    background-color: #B8DBD9;
+}
+
+.side-bar .links {
+    list-style: none;
+
+}
+
+.about-me {
+    position: absolute;
+    left: 20rem;
+    top: 20rem;
+    width: 50%;
+    font-size: 2rem;
+}
+
+.about-lbl {
+    position: absolute;
+    font-size: 3rem;
+    top: 15rem;
+    left: 20rem;
+}
+
+
+.links :hover {
+    transition: .5s;
+    color: #5BBA6F;
+}
+
+.me-img {
+    position: absolute;
+    border-radius: 50%;
+    filter: saturate(0%);
+    left: 80rem;
+    top: 10rem;
+    width: 35rem;
+    border: 3px solid #5BBA6F;
+    transition: 0.5s;
+}
+.me-img:hover {
+    transition: 0.5s;
+    filter: saturate(95%);
+    box-shadow: 0 1rem 2rem #5BBA6F;
+}
+
+
+.social-links {
+    display: flex;
+}
+
+
+
+.home-page h1 {
+    position: absolute;
+    font-size: 6rem;
+    top:18rem;
+    left: 27rem;
+}
+
+.home-page h2 {
+    position: absolute;
+    font-size: 2rem;
+    top: 28rem;
+    left: 35rem;
+    color: #375f41;
+}
+
+.btns {
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+    left: 26.5rem;
+    top: 35rem;
+}
+
+
+.btn:before {
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.btn {
+    font-family: 'Advent Pro', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: black;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+
+}
+
+.btn:disabled {
+    cursor: default;
+
+}
+
+.btn:-moz-focusring {
+    outline: auto;
+}
+
+.btn svg {
+    vertical-align: middle;
+}
+
+.btn [hidden] {
+    display: none;
+}
+
+.btn {
+    --thickness: 0.3rem;
+    --roundness: 1.2rem;
+    --color: #000000;
+    --opacity: 0.6;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    background: none;
+    background: hsla(0, 0%, 100%, 0.2);
+    border: none;
+    border-radius: var(--roundness);
+    color: var(--color);
+    cursor: pointer;
+    display: block;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8rem 3rem;
+    position: relative;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transition: 0.5s;
+    background: #2F4550;
+    filter: brightness(1.2);
+    border: 3px solid #5BBA6F;
+    color: #5BBA6F;
+
+}
+
+.btn:active {
+    --opacity: 0;
+    background: #B8DBD9;
+}
+
+.btn svg {
+    border-radius: var(--roundness);
+    display: block;
+    filter: url(#glow);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.btn rect {
+    fill: none;
+    stroke: var(--color);
+    stroke-width: var(--thickness);
+    rx: var(--roundness);
+    stroke-linejoin: round;
+    stroke-dasharray: 185%;
+    stroke-dashoffset: 80;
+    -webkit-animation: snake 2s linear infinite;
+    animation: snake 2s linear infinite;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s;
+    width: 100%;
+}
+
+.btn:hover rect {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    opacity: var(--opacity);
+}
+
+@-webkit-keyframes snake {
+    to {
+        stroke-dashoffset: 370%;
+    }
+}
+
+@keyframes snake {
+    to {
+        stroke-dashoffset: 370%;
+    }
+}
+.img-me2{
+    position: absolute;
+    left: 80rem;
+    top: 10rem;
+    filter: saturate(100%);
+}
+.cube{
+    position: absolute;
+    background: #2F4550;
+    width: 15rem;
+    height: 15rem;
+    rotate: 30deg;
+    left: 80rem;
+    top: 10rem;
+    animation-name: cuberote;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function:ease-in-out;
+    animation-direction: reverse;
+}
+.cube-2{
+    position: absolute;
+    background: #2F4550;
+    width: 15rem;
+    height: 15rem;
+    rotate: 30deg;
+    left: 90rem;
+    top: 25rem;
+    animation-name: cuberote;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function:ease-in-out;
+    animation-direction:normal;
+}
+.cube-3{
+    position: absolute;
+    background: #2F4550;
+    width: 15rem;
+    height: 15rem;
+    rotate: 30deg;
+    left: 75rem;
+    top: 40rem;
+    animation-name: cuberote;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function:ease-in-out;
+    animation-direction:reverse;
+}
+.cube-4{
+    position: absolute;
+    background: #5BBA6F;
+    width: 12rem;
+    height: 12rem;
+    rotate: 30deg;
+    left: 85rem;
+    top: 43rem;
+    animation-name: cuberote;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function:ease-in-out;
+    animation-direction:normal;
+}
+.cube-5{
+    position: absolute;
+    background: #5BBA6F;
+    width: 5rem;
+    height:5rem;
+    rotate: 30deg;
+    left: 75rem;
+    top: 25rem;
+    animation-name: cuberote;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function:ease-in-out;
+    animation-direction:alternate;
+}
+.cube-6{
+    position: absolute;
+    background: #5BBA6F;
+    width: 8rem;
+    height:8rem;
+    rotate: 30deg;
+    left: 100rem;
+    top: 15rem;
+    animation-name: cuberote;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function:ease-in-out;
+    animation-direction:alternate;
+}
+@keyframes cuberote {
+    from{ rotate: 30deg; }
+    to{ transform: rotate(360deg) ; }
+}
+.svg-dwl2{
+    display: none; /* Esconde o SVG inicialmente */
+    width: auto;
+    position: absolute;
+    left: 6rem;
+    transition: 0.5s;
+}
+
+#btn-lp:hover .svg-dwl2
+{
+    transition: 0.5s;
+    display: inline-block; /* Mostra o SVG quando o mouse passa por cima do botão */
+}
+

@@ -1,0 +1,25 @@
+.bar-menu {
+    background-color: #000000;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+    border-radius: 10px;
+    left: 30rem;
+}
+.bar-menu a {
+    color: white;
+}
+.bar-menu h1 {
+    color: #B8DBD9;
+}
+.bar-menu h1:hover {
+    transition: 0.5s;
+    color: #5BBA6F;
+}
+

@@ -1,0 +1,18 @@
+#btn-dwc{
+position: absolute;
+    top: 40rem;
+    left: 20rem;
+}
+.svg-dwl{
+    display: none; /* Esconde o SVG inicialmente */
+    width: auto;
+    position: absolute;
+    left: 12rem;
+    transition: 0.5s;
+}
+
+#btn-dwc:hover .svg-dwl
+{
+    transition: 0.5s;
+    display: inline-block; /* Mostra o SVG quando o mouse passa por cima do botão */
+}
